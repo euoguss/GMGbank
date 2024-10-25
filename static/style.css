@@ -1,0 +1,53 @@
+body{
+    background-color: #515151;
+}
+
+#card-title{
+    color: white;
+}
+
+#btn{
+    padding: 15px;
+}
+
+.card{
+    background-color: #666666;
+}
+
+.banner-logo{
+    width: 100vw;
+    height: 100px;
+}
+
+
+.top{
+    margin-bottom: 50px;
+}
+
+.welcome{
+    padding: 20px;
+}
+
+.btn-nav{
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.link-btn{
+    text-decoration: black;
+    color: white;
+}
+
+.cont{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.saldo{
+    font-size: x-large;
+    padding: auto;
+    margin-top: 15px;
+    margin-left: 70vw;
+    margin-right: 10vw;
+}
