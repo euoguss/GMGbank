@@ -1,0 +1,55 @@
+{%extends 'index.html'%}
+
+{%block title%}
+<title>GMG Bank</title>
+{%endblock%}
+
+
+{%block head%}
+<link rel="stylesheet" href="{{url_for('static', filename='css/home_style.css')}}">
+{%endblock%}
+
+{%block content%}
+<h1 class="welcome"> Seja bem vindo <span class="badge bg-secondary">Nome do usuario</span></h1>
+<div class="container-fluid">
+    <p class="bg-secondary saldo">Saldo em conta: <span class="badge bg-secondary">R$ 0,00</span></p>
+</div>
+
+<div class="subt">
+<h2>O que podemos fazer para voce hoje?</h2>
+</div>
+
+<div class="cont">
+
+    <div class="card" style="width: 18rem;">
+      <img src="{{url_for('static', filename='/assets/pessoasReuniao.jpg')}}" class="card-img-top" alt="pessoas em reuniao">
+      <div class="card-body">
+        <p id="card-title" class="card-text">Transforme seu futuro financeiro com o GMGBank! Junte-se a nós e descubra um banco que valoriza cada cliente, oferecendo soluções inovadoras, atendimento personalizado e total transparência. No GMGBank, seu dinheiro trabalha para você, alcançando seus sonhos e objetivos. Faça parte da nossa família e veja a diferença!</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="{{url_for('static', filename='/assets/cofreSecreto.png')}}" class="card-img-top" alt="imagen do cofre secreto">
+        <div class="card-body">
+            <h5 id="card-title" class="card-title">Cofre secreto</h5>
+            <p id="card-title" class="card-text">Transforme cada centavo em um tesouro no seu Cofre Secreto – onde cada poupança é um passo rumo aos seus sonhos!</p>
+            <!-- Criar um form para investir no cofre -->
+        <a href="#" class="btn btn-secondary">Guardar</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="{{url_for('static', filename='/assets/pessoasDivertindo.jpg')}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 id="card-title" class="card-title">Venha fazer parte dos nossos planos</h5>
+          <p id="card-title" class="card-text">Se divirta mais e deixe os problemas com a gente - confira nossos planos feitos para você</p>
+          <ul id="card-title" class="card list-group list-group-flush">
+          <li id="card-title" class="card list-group-item">Saúde</li>
+          <li id="card-title" class="card list-group-item">Investimentos</li>
+          <li id="card-title" class="card list-group-item">Seguros</li>
+        </ul>
+    </div>
+      </div>
+</div>
+{%endblock%}
+
