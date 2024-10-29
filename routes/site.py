@@ -4,7 +4,7 @@ site_route = Blueprint('site', __name__)
 
 @site_route.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('home.html')
 
 @site_route.route('/transfer<int:id>')
 def transfer(id):
@@ -12,7 +12,7 @@ def transfer(id):
 
 @site_route.route('/receipts<int:id>')
 def receipts(id):
-    return render_template('receipts.html', id=id)   
+    return render_template('receipts.html', id=id)
 
 @site_route.route('/account<int:id>')
 def account(id):
